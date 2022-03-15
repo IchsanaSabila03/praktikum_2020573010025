@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //1. Route bawaan laravel
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route ::get('/home', function () {
     return view('halaman_home');
 });
 
 Route :: get ('/mahasiswa', function() {
-    return View :: make ('kampus.mahasiswa');
+    return View::make('mahasiswa');
 });
 
 // Route :: get ('/home', function(){

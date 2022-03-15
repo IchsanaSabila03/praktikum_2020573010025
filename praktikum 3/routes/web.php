@@ -22,9 +22,8 @@ Route :: get ('/home', function() {
 });
 
 Route :: get ('/mahasiswa', function() {
-    return View::make('kampus.mahasiswa');
+    return View :: make ('kampus.mahasiswa');
 });
-
 
 // Route :: get ('/home', function(){
 //     return view('home',[

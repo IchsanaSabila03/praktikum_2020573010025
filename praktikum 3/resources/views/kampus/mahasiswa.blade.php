@@ -15,7 +15,7 @@
         <li>Farah Salsabila</li>
     </ol>
 <div>
-    Copyright &copy; <?php echo date("Y")?> Program Studi Teknik Informatika-PNL
+    Copyright &copy <?php echo date("Y")?> Program Studi Teknik Informatika-PNL
 </div>
 </body>
 </html>

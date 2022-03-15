@@ -8,13 +8,11 @@
 </head>
 <body>
     <h1>Daftar Mahasiswa</h1>
-    <ol>
-        <?php 
-        foreach ($mahasiswa as $nama) {
-        echo "<li> $nama </li>";
-        }
-        ?>
-    </ol>
+  <li>Ichsana Sabila</li>
+  <li>Akramul Fata</li>
+  <li>Dira MahgFirah</li>
+  <li>Farah Salsabila</li>
+  
 <div>
     Copyright &copy; <?php echo date("Y");?> Program Studi Teknik Informatika-PNL
 </div>

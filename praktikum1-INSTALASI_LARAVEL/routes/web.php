@@ -13,15 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //1. Route bawaan laravel
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Route::get('/mahasiswa', function (){
-//     $mahasiswa01=> "Ichsana Sabila",
-//     $mahasiswa02=> "Akramul Fata",
-//     $mahasiswa03=> "Dira Mahgfirah",
-//     $mahasiswa04=> "Farah Salsabila"
+//     $nama=> 'Ichsana Sabila';
+//     $nilai = 75;
 // return view('kampus.mahasiswa', compact ("mahasiswa01","mahasiswa02","mahasiswa03","mahasiswa04"));
 // });
 
@@ -30,9 +28,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('halaman_home');
 // });
 
-Route :: get ('/mahasiswa', function() {
-    return View::make('kampus.mahasiswa');
-});
+// Route :: get ('/mahasiswa', function() {
+//     return View::make('kampus.mahasiswa');
+// });
 
 // Route :: get ('/home', function(){
 //     return view('home',[

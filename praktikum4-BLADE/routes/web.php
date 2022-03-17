@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/mahasiswa', function (){
     $nama = 'Ichsana Sabila';
-    $nilai = 98;
+    $nilai = 48;
     return view('mahasiswa', compact ('nama','nilai'));
 });
 

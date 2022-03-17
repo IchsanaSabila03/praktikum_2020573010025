@@ -1,7 +1,5 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,12 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/mahasiswa', function (){
-//     $nama=> 'Ichsana Sabila';
-//     $nilai = 75;
-// return view('kampus.mahasiswa', compact ("mahasiswa01","mahasiswa02","mahasiswa03","mahasiswa04"));
-// });
-
+Route::get('/mahasiswa', function (){
+    $nama = 'Ichsana Sabila';
+    $nilai = 98;
+    return view('mahasiswa', compact ('nama','nilai'));
+});
 
 // Route ::get('/home', function () {
 //     return view('halaman_home');

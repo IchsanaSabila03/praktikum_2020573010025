@@ -11,15 +11,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //1. Route bawaan laravel
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/mahasiswa', function (){
-    $nama = 'Ichsana Sabila';
-    $nilai = [80,64,30,76,95];
-    return view('mahasiswa', compact ('nama','nilai'));
-});
+Route::get('/web', function (){
+        $books = [[
+            'id' => 2,
+            'title' => 'Post Pertama',
+            'author' => 'Icha',
+            'publication' => 'Test',
+            'year' => '2002'
+        ],[
+            'id' => 3,
+            'title' => 'Post Kedua',
+            'author' => 'Icha',
+            'publication' => 'Test',
+            'year' => '2002'
+        ]];
+        return view('index',[
+            'books' => $books,
+        ]);
+    });
+
+// Route::get('/mahasiswa', function (){
+//     $nama = 'Ichsana Sabila';
+//     $nilai = [80,64,30,76,95];
+//     return view('mahasiswa', compact ('nama','nilai'));
+// });
 
 // Route ::get('/home', function () {
 //     return view('halaman_home');

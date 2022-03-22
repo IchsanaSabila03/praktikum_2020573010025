@@ -19,15 +19,15 @@ Route::get('/web', function (){
         $books = [[
             'id' => 2,
             'title' => 'Post Pertama',
-            'author' => 'Icha',
+            'author' => 'Ichsana',
             'publication' => 'Test',
-            'year' => '2002'
+            'year' => '2021'
         ],[
             'id' => 3,
             'title' => 'Post Kedua',
-            'author' => 'Icha',
+            'author' => 'Sabila',
             'publication' => 'Test',
-            'year' => '2002'
+            'year' => '2022'
         ]];
         return view('index',[
             'books' => $books,

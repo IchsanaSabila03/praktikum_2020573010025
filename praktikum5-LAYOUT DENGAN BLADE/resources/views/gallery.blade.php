@@ -47,10 +47,18 @@
     <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
     class="img-trumbnail img-fuid">
     </div>
+    <div class="col-4">
+    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
+    class="img-trumbnail img-fuid">
+    </div>
+    <div class="col-4">
+    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
+    class="img-trumbnail img-fuid">
+    </div>
     </div>
     </div>
 
-<footer class="bg-dark py-4 text-whte mt-4">
+<footer class="bg-dark py-4 text-white mt-4">
 <div class="container">
 Sistem Informasi Mahasiswa | Copyright © {{date("Y")}} Teknik Informatika
 </div>

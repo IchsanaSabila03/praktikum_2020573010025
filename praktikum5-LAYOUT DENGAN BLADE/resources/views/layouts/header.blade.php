@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Data Mahasiswa</title>
 </head>
 <body>
-    <div style="background: #388BF2; font-size: 24px; color: white">
-        Simple library app
-    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class= "container">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link active" href="/mahasiswa">Data Mahasiswa</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/dosen">Data Dosen</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        </ul>
+        </div>
+        </nav>
 </body>
 </html>

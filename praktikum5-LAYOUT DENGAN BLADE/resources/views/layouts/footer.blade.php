@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="background: #31B057; font-size: 20px; color: white">
-        Created with love and willingness to learn
-    </div>
+    <footer class="bg-dark py-4 text-white mt-4">
+        <div class="container">
+        Sistem Informasi Mahasiswa | Copyright © {{date("Y")}} Teknik Informatika
+        </div>
+        </footer>
 </body>
 </html>

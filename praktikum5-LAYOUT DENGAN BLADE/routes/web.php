@@ -15,24 +15,38 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/web', function (){
-        $books = [[
-            'id' => 2,
-            'title' => 'Post Pertama',
-            'author' => 'Ichsana',
-            'publication' => 'Test',
-            'year' => '2021'
-        ],[
-            'id' => 3,
-            'title' => 'Post Kedua',
-            'author' => 'Sabila',
-            'publication' => 'Test',
-            'year' => '2022'
-        ]];
-        return view('index',[
-            'books' => $books,
-        ]);
-    });
+Route::get('mahasiswa', function (){
+$arrMahasiswa = ["Ichsana Sabila","Jokowi","Vladimir Putin",
+"Lisa Permata"];
+return view('mahasiswa')-> with ('mahasiswa',$arrMahasiswa);
+});
+Route::get('dosen', function (){
+$arrDosen = ["Ichsana Sabila S.Tr.kom","Prof.Silvia Nst, M.farm",
+"Dr. Umar Agustinus","Dr.Syahrial M.kom"];
+return view('dosen')->with('dosen',$arrDosen);
+});
+Route::get('gallery', function (){
+return view('gallery');
+});
+
+// Route::get('/web', function (){
+//         $books = [[
+//             'id' => 2,
+//             'title' => 'Post Pertama',
+//             'author' => 'Ichsana',
+//             'publication' => 'Test',
+//             'year' => '2021'
+//         ],[
+//             'id' => 3,
+//             'title' => 'Post Kedua',
+//             'author' => 'Sabila',
+//             'publication' => 'Test',
+//             'year' => '2022'
+//         ]];
+//         return view('index',[
+//             'books' => $books,
+//         ]);
+//     });
 
 // Route::get('/mahasiswa', function (){
 //     $nama = 'Ichsana Sabila';

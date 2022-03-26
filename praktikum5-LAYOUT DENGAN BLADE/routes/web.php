@@ -29,6 +29,10 @@ Route::get('gallery', function (){
 return view('gallery');
 });
 
+Route::get('admin', function () {
+    return view('admin');
+});
+
 // Route::get('/web', function (){
 //         $books = [[
 //             'id' => 2,

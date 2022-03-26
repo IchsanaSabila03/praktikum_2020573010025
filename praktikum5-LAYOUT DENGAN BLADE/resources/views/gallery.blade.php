@@ -1,68 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <title>Gallery</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class= "container">
-    <ul class="navbar-nav">
-    <li class="nav-item">
-    <a class="nav-link active" href="/mahasiswa">Data Mahasiswa</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="/dosen">Data Dosen</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="/gallery">Gallery</a>
-    </li>
-    </ul>
-    </div>
-    </nav>
-
-    <div class="container text-center mt-3 p-4 bg-white">
+{{-- @include('layout.header',['title' => 'Data Dosen']) --}}
+{{-- @include('layout.header',['title' => 'Data Dosen', 'dataA' => 'NilaiA','datab'=>'NilaiB']) --}}
+{{-- @include('layout.footer') --}}
+@extends('layout.master')
+@section('title','Gallery')
+@section('menuGallery','active')
+@section('content')
+<div class="container text-center mt-3 p-4 bg-white">
     <h1 class="mb-3">Gallery</h1>
     <div class="row">
-    <div class="col-4">
-    <img scr="350x250"
-    class="img-trumbnail img-fuid">
+        <div class="col-4">
+            <img src="https://awsimages.detik.net.id/community/media/visual/2018/12/18/b950aed8-91de-4a5c-9024-dafa279aa580.png?w=750&q=90" class="img-thumbnail img-fluid">
+        </div>
+        <div class="col-4">
+            <img src="https://bertuahpos.com/wp-content/uploads/2020/09/images-35.jpeg" class="img-thumbnail img-fluid">
+        </div>
+        <div class="col-4">
+            <img src="https://awsimages.detik.net.id/community/media/visual/2019/10/16/54cc653c-4b13-4008-9823-7465ca5d4c04.jpeg?w=750&q=90" class="img-thumbnail img-fluid">
+        </div>
     </div>
-    <div class="col-4">
-    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
-    class="img-trumbnail img-fuid">
-    </div>
-    <div class="col-4">
-    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
-    class="img-trumbnail img-fuid">
-    </div>
-    <div class="col-4">
-    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
-    class="img-trumbnail img-fuid">
-    </div>
-    <div class="col-4">
-    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
-    class="img-trumbnail img-fuid">
-    </div>
-    <div class="col-4">
-    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
-    class="img-trumbnail img-fuid">
-    </div>
-    <div class="col-4">
-    <img scr="https://source.unsplash.com/cXUOQWdRV4I/350x250"
-    class="img-trumbnail img-fuid">
-    </div>
-    </div>
-    </div>
-
-<footer class="bg-dark py-4 text-white mt-4">
-<div class="container">
-Sistem Informasi Mahasiswa | Copyright © {{date("Y")}} Teknik Informatika
 </div>
-</footer>
-
-</body>
-</html>
+@endsection

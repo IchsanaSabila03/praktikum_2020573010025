@@ -32,7 +32,7 @@
                 @endcomponent
                 --}}
                 <!-- menggirim satu variabel lagi untuk Judul -->
-                <h4>menambahkan variabel pada file resource/views/layout/alert.blade.php</h4>
+                <h4>menambahkan variabel pada file resource/views/layout/alert.blade.php</h4> --}}
                 @component('layout.alert')
                 @slot('class')
                 warning
@@ -42,6 +42,7 @@
                 @endslot
                 100 Data Mahasiswa Perlu Diperbaiki
                 @endcomponent
+
                 @component('layout.alert')
                 @slot('class')
                 danger
@@ -51,6 +52,7 @@
                 @endslot
                 Hari Ini Deadline Laporan Perjalanan Dinas!
                 @endcomponent
+
                 @component('layout.alert')
                 @slot('class')
                 success
@@ -66,9 +68,11 @@
                 @component('layout.alert',['class' => 'warning', 'judul'=>'Peringatan', ])
                 100 Data Mahasiswa Perlu Diperbaiki
                 @endcomponent
+
                 @component('layout.alert',['class' => 'danger', 'judul'=>'Awas', ])
                 Hari Ini Deadline Laporan Perjalanan Dinas
                 @endcomponent
+                
                 @component('layout.alert',['class' => 'success', 'judul'=>'Kabar Baik', ])
                 Bulan Depan Cuti Panjang
                 @endcomponent
@@ -78,3 +82,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+{{-- <div class="container text-center mt-3 p-4 bg-white">
+<h1 class="mb-3">Halaman Admin</h1>
+<div class="row">
+<div class="col-12">
+
+    <div class="alert alert-danger alert-dismissible fade show">
+    100 Data Mahasiswa Perlu Diperbaiki
+    <button type="button" class="btn-close"
+    data-bs-dismiss="alert"></button>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show">
+    Hari Ini Deadline Laporan Perjalanan Dinas
+    <button type="button" class="btn-close"
+    data-bs-dismiss="alert"></button>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html> --}}

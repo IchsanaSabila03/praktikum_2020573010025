@@ -13,12 +13,29 @@ use App\Http\Controllers\MahasiswaController;
 |
 */
 //1. Route bawaan laravel
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/mahasiswa', [MahasiswaController::class,'index']);
-Route::resource('/dosen', DosenController::class);
+// controller manual
+Route::get('/', [PageController::class, 'index']);
+Route::get('/mahasiswa', [PageController::class, 'tampil']);
+
+//Route Facades
+Route::get('/facades', [PageController::class, 'cobaFacades']);
+
+// external class
+Route::get('coba-class', [PageController::class, 'cobaClass']);
+
+// route Tugas
+Route::get('data-mahasiswa', [MahasiswaController::class, 'mahasiswa']);
+Route::get('data-dosen', [MahasiswaController::class, 'dosen']);
+Route::get('data-gallery', [MahasiswaController::class, 'gallery']);
+
+Route::get('informasi/{jurusan}/{prodi}', [MahasiswaController::class, 'info']);
+
+// Route::get('/mahasiswa', [MahasiswaController::class,'index']);
+// Route::resource('/dosen', DosenController::class);
     
 
 // Route::get('mahasiswa', function (){

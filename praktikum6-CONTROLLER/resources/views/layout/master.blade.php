@@ -17,24 +17,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link @yield('menuMahasiswa')" aria-current="page" href="/mahasiswa">Data Mahasiswa</a>
+          <a class="nav-link @yield('menuMahasiswa')" aria-current="page" href="/data-mahasiswa">Data Mahasiswa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @yield('menuDosen')" aria-current="page" href="/dosen">Data Dosen</a>
+          <a class="nav-link @yield('menuDosen')" aria-current="page" href="/data-dosen">Data Dosen</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @yield('menuGallery')" aria-current="page" href="/gallery">Gallery</a>
+          <a class="nav-link @yield('menuGallery')" aria-current="page" href="/data-gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link @yield('menuInformasi')" aria-current="page" href="/informasi/{jurusan}/{prodi}">Informasi</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 @show
-<div class="alert alert-primary text-center">Sistem Informasi Mahasiswa Ichsana Sabila</div>
+<div class="alert alert-primary text-center">Sistem Informasi Mahasiswa Akramul Fata</div>
 @yield('content')
 <footer class="bg-dark py-4 text-white mt-4">
     <div class="container">
-      Sistem Informasi Mahasiswa Teknik Informatika | Copyright &copy; {{date("Y")}} Ichsana Sabila
+      Sistem Informasi Mahasiswa | Copyright &copy; {{date("Y")}} Teknik Informatika
     </div>
 </footer>
 </body>

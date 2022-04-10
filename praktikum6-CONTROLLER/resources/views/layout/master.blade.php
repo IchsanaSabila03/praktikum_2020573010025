@@ -33,11 +33,11 @@
   </div>
 </nav>
 @show
-<div class="alert alert-primary text-center">Sistem Informasi Mahasiswa Akramul Fata</div>
+<div class="alert alert-primary text-center">Sistem Informasi Mahasiswa Ichsana Sabila</div>
 @yield('content')
 <footer class="bg-dark py-4 text-white mt-4">
     <div class="container">
-      Sistem Informasi Mahasiswa | Copyright &copy; {{date("Y")}} Teknik Informatika
+      Sistem Informasi Mahasiswa Teknik Informatika | Copyright &copy; {{date("Y")}} Ichsana Sabila
     </div>
 </footer>
 </body>

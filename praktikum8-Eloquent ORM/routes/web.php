@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/cek-object', [MahasiswaController::class, 'cekObject']);
+Route::get('/insert', [MahasiswaController::class, 'insert']);
 
 // controller manual
 // Route::get('/', [PageController::class, 'index']);

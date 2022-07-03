@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //1. Route bawaan laravel
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('mahasiswa', function (){
 $arrMahasiswa = ["Ichsana Sabila","Jokowi","Vladimir Putin",
